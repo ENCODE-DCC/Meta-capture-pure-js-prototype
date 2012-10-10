@@ -1,0 +1,30 @@
+extends layout
+
+block content
+  div.page-header
+    h1= title
+
+  div.row
+    div.span12
+      h2 ENCODE 3 Antibodies (
+        span(data-bind="text: antibodies().length") )
+
+      table.table
+        thead
+          tr
+            th Antibody Name
+            th Target
+            th Organism
+        tbody(data-bind="foreach: antibodies")
+          tr
+            td(data-bind="text: name")
+            td
+              select(data-bind="options: $root.availableTargets, value: target, optionsText: 'symbol'")
+            td(data-bind="text: organism")
+            td
+              a(data-bind="click: $root.removeAntibody") Remove
+
+      button(data-bind="click: $root.addAntibody").btn Add a new Antibody
+
+block scripts
+  script(type='text/javascript', src='/javascripts/antibody/antibody.js')

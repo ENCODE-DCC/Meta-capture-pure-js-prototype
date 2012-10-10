@@ -1,0 +1,95 @@
+{
+    "Experiment-B": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleB",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1prime",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": []
+            },
+           {
+                "filename": "replicate_file1dblprime",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": []
+            }
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file2prime",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": ["replicate_file1prime","replicate_file1dblprime"]
+            }
+        ]
+    }
+}

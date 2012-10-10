@@ -5,11 +5,13 @@
 
 var express = require('express');
 var routes = require('./routes');
-var tutorial1 = require('./routes/tutorial1');
+var antibody = require('./routes/antibody');
 var tutorial2 = require('./routes/tutorial2');
 var http = require('http');
+var mongoose = require('mongoose');
 
 var app = express();
+mongoose.connect('mongodb://localhost/encode_dcc');
 
 app.configure(function(){
   app.set('port', process.env.PORT || 3030);
@@ -31,7 +33,7 @@ app.configure('development', function(){
 app.get('/', routes.index);
 app.get('/about', routes.about);
 
-app.get('/tutorial1', tutorial1.index);
+app.get('/antibody', antibody.index);
 app.get('/tutorial2', tutorial2.index);
 
 http.createServer(app).listen(app.get('port'), function(){
