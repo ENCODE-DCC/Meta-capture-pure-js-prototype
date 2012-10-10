@@ -1,4 +1,3 @@
-expressjs.bootstrap.knockoutjs.tutorials
+ENCODE DCC - Prototype Metadata capture using MongoDB
 ========================================
 
-Knockout.js tutorial code for http://learn.knockoutjs.com/ realized with Twitter Bootstrap, Node.js and Express.js
