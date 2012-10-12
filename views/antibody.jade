@@ -7,7 +7,8 @@ block content
   div.row
     div.span12
       h2 ENCODE 3 Antibodies (
-        span(data-bind="text: antibodies().length") )
+        span(data-bind="text: antibodies().length")
+        )
 
       table.table
         thead
@@ -17,14 +18,18 @@ block content
             th Organism
         tbody(data-bind="foreach: antibodies")
           tr
-            td(data-bind="text: name")
+            td
+              input(data-bind="value: name")
             td
               select(data-bind="options: $root.availableTargets, value: target, optionsText: 'symbol'")
-            td(data-bind="text: organism")
+            td
+              select(data-bind="options: $root.availableOrgs, value: organism")
             td
               a(data-bind="click: $root.removeAntibody") Remove
+            td
+              a(data-bind="click: $root.viewJSON") View JSON
 
       button(data-bind="click: $root.addAntibody").btn Add a new Antibody
-
+ 
 block scripts
   script(type='text/javascript', src='/javascripts/antibody/antibody.js')

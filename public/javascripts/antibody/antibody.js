@@ -10,7 +10,13 @@ $(document).ready(function() {
   // Overall viewmodel for this screen, along with initial state
   function AntibodiesViewModel() {
     var self = this;
+    
+    self.viewAb = ko.observable({});
 
+	self.availableOrgs = [
+		'H. sapiens',
+		'M. musculus'
+	]
     // Get list of HGNC targets from server??
     self.availableTargets = [    
     		{
@@ -715,17 +721,22 @@ $(document).ready(function() {
 			{
 			"symbol": "ZZZ3"
 			}
-
     ];
     // Editable data
-    self.antibodies = ko.observableArray
+    self.antibodies = ko.observableArray(
+    	[ new Antibody("", "","H. sapiens") ]
+  )
 
     self.addAntibody = function() {
       self.antibodies.push(new Antibody("", "","H. sapiens"));
     };
 
     self.removeAntibody = function(ab) {
-      self.antibody.remove(ab);
+      self.antibodies.remove(ab);
+    };
+    
+    self.viewJSON = function(ab) {
+      self.viewAb = ab;
     };
 
     }
