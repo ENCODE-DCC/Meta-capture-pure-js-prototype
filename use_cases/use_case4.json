@@ -1,0 +1,287 @@
+{
+    "Experiment-Dprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": "prep-1"
+                },
+        },
+        "technology_protocol": {
+        		"name": "tech-1"
+        },
+        "biosample": {
+            "term_name": "BiosampleD",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "antibody": "vm-1",
+        "controls": ["Experiment-Dsharp"],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1",
+                "tag": "",
+                "type": "protocol",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "alignedReads",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": [],
+                "replicate_file": ["replicate_file4"]
+            },
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file3",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Signal"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "replicate_file":["replicate_file6"],
+                "derived_from": ["replicate_file1","replicate_file2"]
+            }
+        ]
+    }
+
+    "Experiment-Ddblprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": "prep-1"
+                },
+        },
+        "technology_protocol": {
+        		"name": "tech-1"
+        },
+        "biosample": {
+            "term_name": "BiosampleD",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "antibody": "vm-1",
+        "controls": ["Experiment-Ddblsharp"],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1",
+                "tag": "",
+                "type": "protocol",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "alignedReads",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": [],
+                "replcate_file": ["replciate_file4"]
+            },
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file6",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Signal"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "replicate_file": ["replicate_file3"],
+                "derived_from": ["replicate_file4","replicate_file5"]
+            }
+        ]
+    }
+
+    "Experiment-Dsharp": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": "prep-2"
+                },
+        },
+        "technology_protocol": {
+        		"name": "tech-2"
+        },
+        "biosample": {
+            "term_name": "BiosampleD",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "antibody": "",
+        "controls": [""],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file2",
+                "tag": "",
+                "type": "protocol",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "alignedReads",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": [],
+                "replcate_file": ["replciate_file5"]
+            },
+           ]
+    }
+
+    "Experiment-Ddblsharp": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": "prep-2"
+                },
+        },
+        "technology_protocol": {
+        		"name": "tech-2"
+        },
+        "biosample": {
+            "term_name": "BiosampleD",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "antibody": "",
+        "controls": [""],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file5",
+                "tag": "",
+                "type": "protocol",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "alignedReads",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": [],
+                "replcate_file": ["replciate_file2"]
+            },
+           ]
+    }
+}
