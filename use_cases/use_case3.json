@@ -1,0 +1,159 @@
+{
+    "Experiment-Cprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleC",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file4",
+                "tag": "",
+                "type": "protocol",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "rawToAlignments,
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": [],
+                "replicate_file": ["replicate_file5"]
+            },
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file6",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Signal"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": ["replicate_file4","replicate_file5"]
+            }
+        ]
+    }
+
+    "Experiment-Cdblprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleC",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file5",
+                "tag": "",
+                "type": "protocol",
+                "level": 2,
+                "output_type": "Alignments"
+                "location": "",
+                "software": {
+                    "name": "rawToAlignments,
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": [],
+                "replcate_file": ["replciate_file4"]
+            },
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file6",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Signal"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                }
+                "derived_from": ["replicate_file5","replicate_file4"]
+            }
+        ]
+    }
+}
