@@ -6,7 +6,7 @@ var mongoose = require('mongoose')
   , Schema = mongoose.Schema
 
 var AntibodySchema = new Schema({
-	name: String,
+	name: { type: String, unique: true },
 	target: { 
 		name: String,
 		organism: String
@@ -17,4 +17,4 @@ var AntibodySchema = new Schema({
 	validation_documents: [Buffer]
 });
 
-mongoose.model('Antibody', AntibodySchema)
+mongoose.model('Antibody', AntibodySchema);
