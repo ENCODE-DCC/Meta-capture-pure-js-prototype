@@ -53,7 +53,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": []
             }
            ],
@@ -71,7 +71,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": ["replicate_file1"]
             },
             {
@@ -87,7 +87,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": ["derived_file2"]
             }
             

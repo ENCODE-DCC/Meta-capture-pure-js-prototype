@@ -54,7 +54,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": [],
                 "replicate_file": ["replicate_file4"]
             },
@@ -135,7 +135,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": [],
                 "replcate_file": ["replciate_file4"]
             },
@@ -216,7 +216,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": [],
                 "replcate_file": ["replciate_file5"]
             },
@@ -278,7 +278,7 @@
                 },
                 "assembly": {
                     "name": ""
-                }
+                },
                 "derived_from": [],
                 "replcate_file": ["replciate_file2"]
             },
