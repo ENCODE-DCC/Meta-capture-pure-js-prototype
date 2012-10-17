@@ -43,7 +43,7 @@
             {
                 "filename": "replicate_file1prime",
                 "tag": "",
-                "type": "",
+                "type": "technical",
                 "level": 0,
                 "output_type": "RawData"
                 "location": "",
@@ -54,12 +54,13 @@
                 "assembly": {
                     "name": ""
                 }
-                "derived_from": []
+                "derived_from": [],
+                "replicate_file":[replicate_file1dblprime"],
             },
            {
                 "filename": "replicate_file1dblprime",
                 "tag": "",
-                "type": "",
+                "type": "technical",
                 "level": 0,
                 "output_type": "RawData"
                 "location": "",
@@ -71,6 +72,7 @@
                     "name": ""
                 }
                 "derived_from": []
+                "replicate_file":[replicate_file1prime"],
             }
            ],
            "derived_file": [
