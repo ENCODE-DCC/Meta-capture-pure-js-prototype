@@ -1,0 +1,63 @@
+{
+    "Experiment-K": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleK",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ["BiosampleI","BiosampleJ"]
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": []
+            }
+           ]
+            
+    }
+
+}
