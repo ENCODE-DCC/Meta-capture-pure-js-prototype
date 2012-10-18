@@ -734,6 +734,7 @@ $(document).ready(function() {
     ];
     // Editable data
     self.antibodies = ko.mapping.fromJS([]);
+    self.viewAb = ko.observable();
 
 	self.getAntibodies = function() {
         $.ajax({
@@ -766,7 +767,7 @@ $(document).ready(function() {
     };
     
     self.viewJSON = function(ab) {
-      self.viewAb = ab;
+      self.viewAb(ko.toJSON(ab));
     };
 
     }
