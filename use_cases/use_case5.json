@@ -1,0 +1,160 @@
+{
+    "Experiment-E": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleE",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": "sourceE"
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": []
+            }
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file2",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Difference"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": ["replicate_file1","replicate_file1prime"]
+            }
+            
+        ]
+    }
+
+    "Experiment-Eprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleEprime",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": "sourceE"
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": "treatment-1"
+            	},
+            	"properties": [
+            		{ "treatment_type": "differentiation", 
+            		  "concentration": "100 mm",
+                      "chemical": "chem-1",
+            		  "duration": "10 hr"} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1prime",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": []
+            }
+           ],
+           "derived_file": [
+            {
+                "filename": "derived_file2",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Difference"
+                "location": "",
+                "software": {
+                    "name": "Type1to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": ["replicate_file1","replicate_file1prime"]
+            }
+            
+        ]
+    }
+}
