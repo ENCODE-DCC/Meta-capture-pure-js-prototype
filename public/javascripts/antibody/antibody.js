@@ -1,18 +1,22 @@
 $(document).ready(function() {
-  function Antibody(name, target, organism) {
+  function AntibodyView(data) {
     var self = this;
-    self.name = ko.observable(name);
-    self.target = ko.observable(target);
-    self.organism = ko.observable(organism);
-
-  }
+	self.name = ko.observable(data.name),
+	self.target = { 
+		name: ko.observable(data.target.name),
+		organism: ko.observable(data.target.organism)
+	},
+	self.source = ko.observable(data.source),
+	self.product_id = ko.observable(data.product_id),
+	self.lot_id =  ko.observable(data.lot_id),
+	self.validation_documents =  ko.observableArray(data.validation_documents)
+    
+ }
 
   // Overall viewmodel for this screen, along with initial state
   function AntibodiesViewModel() {
     var self = this;
     
-    self.viewAb = ko.observable({});
-
 	self.availableOrgs = [
 		'H. sapiens',
 		'M. musculus'
@@ -720,15 +724,41 @@ $(document).ready(function() {
 			},
 			{
 			"symbol": "ZZZ3"
+			},
+			{
+			"symbol": "SUZ12"
+			},
+			{
+			"symbol": "TCF12"
 			}
     ];
     // Editable data
-    self.antibodies = ko.observableArray(
-    	[ new Antibody("", "","H. sapiens") ]
-  )
+    self.antibodies = ko.mapping.fromJS([]);
 
+	self.getAntibodies = function() {
+        $.ajax({
+            type: 'GET',
+            url: '/api/antibody',
+            context: this,
+            success: function(data) {
+                self.SuccessfullyRetrievedModelsFromAjax(data);
+            },
+            dataType: 'json'
+        });
+    };
+
+    this.SuccessfullyRetrievedModelsFromAjax = function(models) {
+        ko.mapping.fromJS(models, self.antibodies);
+    };
+    
     self.addAntibody = function() {
-      self.antibodies.push(new Antibody("", "","H. sapiens"));
+      self.antibodies.push(new AntibodyView({ name: "New Antibody",
+      										  target: { name: "None", organism: 'H. sapiens'},
+      										  source: "",
+      										  product_id: "",
+      										  lot_id: "",
+      										  validation_documents: []
+      										  }));
     };
 
     self.removeAntibody = function(ab) {

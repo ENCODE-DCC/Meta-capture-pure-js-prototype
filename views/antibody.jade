@@ -21,15 +21,19 @@ block content
             td
               input(data-bind="value: name")
             td
-              select(data-bind="options: $root.availableTargets, value: target, optionsText: 'symbol'")
+              //- select(data-bind="options: $root.availableTargets, value: target.name, optionsText: 'symbol', optionsValue: target.name")
+              input(data-bind="value: target.name")
             td
-              select(data-bind="options: $root.availableOrgs, value: organism")
+              //- select(data-bind="options: $root.availableOrgs, value: target.organism, optionsValue: target.organism")
+              input(data-bind="value: target.organism")
             td
               a(data-bind="click: $root.removeAntibody") Remove
             td
               a(data-bind="click: $root.viewJSON") View JSON
+          
 
       button(data-bind="click: $root.addAntibody").btn Add a new Antibody
+      button(data-bind="click: $root.getAntibodies").btn Get Antibodies
  
 block scripts
   script(type='text/javascript', src='/javascripts/antibody/antibody.js')
