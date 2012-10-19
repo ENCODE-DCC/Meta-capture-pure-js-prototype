@@ -1,0 +1,163 @@
+{
+    "Experiment-Mprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleM",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file1",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": []
+            }
+
+          ],
+         "derived_file": [
+            {
+                "filename": "replicate_file3",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Signale"
+                "location": "",
+                "software": {
+                    "name": "Type0to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": ["replicate_file1", "replicate_file2"]
+            }
+
+          ]           
+    }
+
+    "Experiment-Nprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": ""
+        },
+        "preparation": {
+                "protocol": {
+                	"name": ""
+                },
+        },
+        "technology_protocol": {
+        		"name": ""
+        },
+        "biosample": {
+            "term_name": "BiosampleN",
+            "type": "",
+            "organism": {
+                "name": ""
+            },
+            "source": {
+                "name": ""
+            },
+            "growth_protocol": {
+                	"name": ""
+            },
+            "treatments": [{
+            	"protocol": { 
+            		"name": ""
+            	},
+            	"properties": [
+            		{ "treatment_type": "", 
+            		  "concentration": 0, 
+            		  "duration": 0} 
+            		  ]
+            }]
+        },
+        "controls": [],
+        "submitted_by": "user",
+        "replicates": [
+            {
+                "filename": "replicate_file2",
+                "tag": "",
+                "type": "",
+                "level": 0,
+                "output_type": "RawData"
+                "location": "",
+                "software": {
+                    "name": "rawThing",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": []
+            }
+
+          ],
+         "derived_file": [
+            {
+                "filename": "replicate_file3",
+                "tag": "",
+                "type": "",
+                "level": 2,
+                "output_type": "Signale"
+                "location": "",
+                "software": {
+                    "name": "Type0to2",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": ["replicate_file2", "replicate_file1"]
+            }
+
+          ]           
+    }
+
+
+}
