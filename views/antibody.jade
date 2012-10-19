@@ -27,9 +27,11 @@ block content
               //- select(data-bind="options: $root.availableOrgs, value: target.organism, optionsValue: target.organism")
               input(data-bind="value: target.organism")
             td
-              a(data-bind="click: $root.removeAntibody") Remove
+              a(data-bind="click: $root.removeAntibody") Delete
             td
               a(data-bind="click: $root.viewJSON") View JSON
+            td
+              a(data-bind="click: $root.saveAntibody") Save
           
 
       button(data-bind="click: $root.addAntibody").btn Add a new Antibody

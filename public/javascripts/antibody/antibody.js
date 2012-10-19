@@ -1,15 +1,16 @@
 $(document).ready(function() {
   function AntibodyView(data) {
     var self = this;
-	self.name = ko.observable(data.name),
+	self.name = ko.observable(data.name);
 	self.target = { 
 		name: ko.observable(data.target.name),
 		organism: ko.observable(data.target.organism)
-	},
-	self.source = ko.observable(data.source),
-	self.product_id = ko.observable(data.product_id),
-	self.lot_id =  ko.observable(data.lot_id),
-	self.validation_documents =  ko.observableArray(data.validation_documents)
+	};
+	self.source = ko.observable(data.source);
+	self.product_id = ko.observable(data.product_id);
+	self.lot_id =  ko.observable(data.lot_id);
+	self.validation_documents =  ko.observableArray(data.validation_documents);
+	self._id = data._id;
     
  }
 
@@ -758,12 +759,43 @@ $(document).ready(function() {
       										  source: "",
       										  product_id: "",
       										  lot_id: "",
-      										  validation_documents: []
+      										  validation_documents: [],
+      										  _id: null
       										  }));
     };
 
     self.removeAntibody = function(ab) {
-      self.antibodies.remove(ab);
+      self.antibodies.destroy(ab);
+    };
+
+    self.saveAntibody = function(ab) {
+      var ab_js = ko.toJS(ab);
+      if (ab_js._id) {
+      	// put to update
+      	$.ajax({
+      		url: "/api/antibody/"+ab_js._id,
+      		type: "PUT",
+      		data: ab_js,
+      		success: function(data, textStatus, jqXHR) {
+			        console.log("PUT response:");
+ 			 	    console.dir(data);
+        			console.log(textStatus);
+        			console.dir(jqXHR);
+        			//need to update self.antibodies?
+    			}	
+      	});
+      } else {
+      	// post to create
+      	$.post('/api/antibody',ko.toJS(ab),
+      	  function(data, textStatus, jqXHR) {
+    		console.log("POST response:");
+    		console.dir(data);
+    		console.log(textStatus);
+    		console.dir(jqXHR);
+    		// need to update self.antibodies?
+    	 }
+    	 );
+      }
     };
     
     self.viewJSON = function(ab) {
