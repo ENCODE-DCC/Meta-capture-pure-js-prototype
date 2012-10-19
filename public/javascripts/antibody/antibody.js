@@ -1,18 +1,4 @@
 $(document).ready(function() {
-  function AntibodyView(data) {
-    var self = this;
-	self.name = ko.observable(data.name);
-	self.target = { 
-		name: ko.observable(data.target.name),
-		organism: ko.observable(data.target.organism)
-	};
-	self.source = ko.observable(data.source);
-	self.product_id = ko.observable(data.product_id);
-	self.lot_id =  ko.observable(data.lot_id);
-	self.validation_documents =  ko.observableArray(data.validation_documents);
-	self._id = data._id;
-    
- }
 
   // Overall viewmodel for this screen, along with initial state
   function AntibodiesViewModel() {
@@ -754,7 +740,7 @@ $(document).ready(function() {
     };
     
     self.addAntibody = function() {
-      self.antibodies.push(new AntibodyView({ name: "New Antibody",
+      self.antibodies.push(ko.mapping.fromJS({ name: "New Antibody",
       										  target: { name: "None", organism: 'H. sapiens'},
       										  source: "",
       										  product_id: "",
