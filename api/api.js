@@ -67,3 +67,16 @@ exports.create_antibody = function(req,res) {
   return res.send(antibody);
 
 };
+
+exports.delete_antibody =  function(req, res) {
+	return AntibodyModel.findById(req.params.id, function (err, antibody) {
+    return antibody.remove(function (err) {
+      if (!err) {
+        console.log("removed");
+        return res.send('');
+      } else {
+        console.log(err);
+      }
+    });
+  });
+};

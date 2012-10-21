@@ -740,18 +740,35 @@ $(document).ready(function() {
     };
     
     self.addAntibody = function() {
-      self.antibodies.push(ko.mapping.fromJS({ name: "New Antibody",
+      self.antibodies.push(ko.mapping.fromJS(
+      	{ name: "New Antibody",
       										  target: { name: "None", organism: 'H. sapiens'},
       										  source: "",
       										  product_id: "",
       										  lot_id: "",
       										  validation_documents: [],
-      										  _id: null
+      										  _id: null // note this distinguished it from a DB object
       										  }));
     };
 
     self.removeAntibody = function(ab) {
-      self.antibodies.destroy(ab);
+      var ab_js = ko.toJS(ab);
+      if (ab_js._id) {
+       	$.ajax({
+      		url: "/api/antibody/"+ab_js._id,
+      		type: "DELETE",
+      		data: ab_js,
+      		success: function(data, textStatus, jqXHR) {
+			        console.log(ab_js._id+" DELETED");
+        			console.log(textStatus);
+        			console.dir(jqXHR);
+        			self.antibodies.remove(ab);
+    			}	
+      	});
+     } else {
+     	     self.antibodies.remove(ab);
+     }
+          
     };
 
     self.saveAntibody = function(ab) {

@@ -45,6 +45,7 @@ app.get('/api/antibody', api.antibodies);
 app.get('/api/antibody/:id', api.antibody);
 app.put('/api/antibody/:id', api.update_antibody);
 app.post('/api/antibody', api.create_antibody);
+app.delete('/api/antibody/:id', api.delete_antibody);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
