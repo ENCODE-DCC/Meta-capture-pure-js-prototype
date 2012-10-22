@@ -190,7 +190,7 @@
         "tag": "",
         "type": "",
         "experiments": ["Experiment-Fprime"],
-        "derived_from": []
+        "derived_file": []
     }
 
     "ProjectB": {
@@ -198,7 +198,7 @@
         "tag": "",
         "type": "",
         "experiments": ["Experiment-Gprime"],
-        "derived_from": []
+        "derived_flle": []
     }
 
     "ProjectC": {
@@ -206,7 +206,7 @@
         "tag": "",
         "type": "",
         "experiments": ["Experiment-Hprime"],
-        "derived_from": []
+        "derived_file": []
     }
 
     "ProjectD": {
@@ -214,7 +214,24 @@
         "tag": "",
         "type": "",
         "experiments": ["Experiment-Fprime","Experiment-Gprime","Experiment-Hprime"],
-        "derived_from": ["replicate_file1","replicate_file2","replicate_file3"]
+        "drived_file": [
+            {
+                "filename": "replicate_file4",
+                "tag": "",
+                "type": "",
+                "level": 4,
+                "output_type": "Anlaysis"
+                "location": "",
+                "software": {
+                    "name": "level4generator",
+                    "version": ""
+                },
+                "assembly": {
+                    "name": ""
+                },
+                "derived_from": ["replicate_file1","replicate_file2","replicate_file3"]
+            }
+        ]
     }
 
 }
