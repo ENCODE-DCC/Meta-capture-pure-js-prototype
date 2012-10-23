@@ -1,0 +1,115 @@
+{
+    "File1": {
+        "name": "replicate_file1",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [],
+        "derived_from": [],
+        "experiments": ["ExperimentAprime"]
+    }
+
+    "File2": {
+        "name": "replicate_file2",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "Type1to2",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [],
+        "derived_from": ["replicate_file1"],
+        "experiments": ["ExperimentAprime"]
+    }
+
+    "File3": {
+        "name": "replicate_file3",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "PlusRawSignal",
+        "location": "",
+        "software": {
+            "name": "Type2to3",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [],
+        "derived_from": ["replicate_file3"],
+        "experiments": ["ExperimentAprime"]
+    }
+
+    "ExperimentAprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleA",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "controls": [].
+        "submitted_by": "user"
+    }
+
+    "ProjectA": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file1", "replciate_file2", "replicate_file3"]
+    }
+
+}
