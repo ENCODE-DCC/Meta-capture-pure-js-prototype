@@ -1,0 +1,172 @@
+{
+    "File4": {
+        "name": "replicate_file4",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "rawToAlignments",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "replicate_file5",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentCprime"]
+    }
+
+    "File5": {
+        "name": "replicate_file5",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alginments",
+        "location": "",
+        "software": {
+            "name": "rawToAlignments",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "replicate_file4",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentCdblprime"]
+    }
+
+    "File6": {
+        "name": "derived_file6",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Signal",
+        "location": "",
+        "software": {
+            "name": "Type1to2",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [],
+        "derived_from": ["replicate_file4", "replicate_file5"],
+        "experiments": ["ExperimentCprime", "ExperimentCdblprime"]
+    }
+
+    "ExperimentCprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleC",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "controls": [].
+        "submitted_by": "user"
+    }
+
+    "ExperimentCdblprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleC",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "controls": [].
+        "submitted_by": "user"
+    }
+
+
+    "ProjectC": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file4", "replciate_file5", "derived_file6"]
+    }
+
+}
