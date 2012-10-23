@@ -100,7 +100,7 @@
                 "name": ""
             },
             "source": {
-                "name": "BiosampleE"
+                "name": "sourceE"
             },
             "growth_protocol": {
                 	"name": ""
@@ -116,6 +116,10 @@
             		  "duration": "10 hr"} 
             		  ]
             }]
+            "relationship": {
+                "type": "derives_from",
+                "biosample": "BiosampleE"
+            }
         },
         "controls": [],
         "submitted_by": "user",
