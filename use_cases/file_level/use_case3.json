@@ -29,7 +29,7 @@
         "tag": "",
         "type": "",
         "level": 2,
-        "output_type": "Alginments",
+        "output_type": "Alignments",
         "location": "",
         "software": {
             "name": "rawToAlignments",
