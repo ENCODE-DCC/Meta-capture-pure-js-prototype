@@ -1,0 +1,125 @@
+{
+    "File1prime": {
+        "name": "replicate_file1prime",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "replicate_file1dblprime",
+                "type": "technical"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentBprime"]
+    }
+
+    "File1dblprime": {
+        "name": "replicate_file1dblprime",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "replicate_file1prime",
+                "type": "technical"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentBprime"]
+    }
+
+    "File2": {
+        "name": "derived_file2",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "Type1to2",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [],
+        "derived_from": ["replicate_file1prime", "replicate_file1dblprime"],
+        "experiments": ["ExperimentBprime"]
+    }
+
+    "ExperimentBprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleB",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "controls": [].
+        "submitted_by": "user"
+    }
+
+    "ProjectB": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file1prime", "replciate_file1dblprime", "derived_file2"]
+    }
+
+}
