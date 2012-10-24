@@ -21,7 +21,7 @@
                 "name": ""
             },
             "source": {
-                "name": ["BiosampleI","BiosampleJ"]
+                "name": "",
             },
             "growth_protocol": {
                 	"name": ""
@@ -35,7 +35,9 @@
             		  "concentration": 0, 
             		  "duration": 0} 
             		  ]
-            }]
+            }],
+            "relationship": "derives_from",
+            "biosample": ["BioSampleI", "BiosampleJ"]
         },
         "controls": [],
         "submitted_by": "user",
