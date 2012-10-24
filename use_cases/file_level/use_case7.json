@@ -1,0 +1,108 @@
+{
+    "File1.1": {
+        "name": "replicate_file1.1",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "",
+                "type": ""
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentLprime"]
+    }
+
+    "File1.2": {
+        "name": "replicate_file1.2",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "",
+                "type": ""
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentLprime"],
+        "previous_version": "replicate_file1.1"
+    }
+
+
+    "ExperimentLprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleL",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }],
+            }
+
+        },
+        "submitted_by": "user"
+    }
+
+
+    "ProjectL": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file1.1", "replicate_file1.2"]
+    }
+
+}
