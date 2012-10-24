@@ -1,0 +1,344 @@
+{
+    "File1": {
+        "name": "replicate_file1",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "alignedReads",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "replicate_file2",
+        "replicates": [
+            {
+                "file_name": "replicate_file4",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentDprime"]
+    }
+
+    "File4": {
+        "name": "replicate_file4",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "alignedReads",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "replicate_file5",
+        "replicates": [
+            {
+                "file_name": "replicate_file1",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentDdblprime"]
+    }
+
+    "File2": {
+        "name": "replicate_file2",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "alignedReads",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "replicate_file5",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentDsharp"]
+    }
+
+    "File5": {
+        "name": "replicate_file5",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Alignments",
+        "location": "",
+        "software": {
+            "name": "alignedReads",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "replicate_file2",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentDdblsharp"]
+    }
+
+    "File3": {
+        "name": "derived_file3",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Signal",
+        "location": "",
+        "software": {
+            "name": "Type1to2",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "derived_file6",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": ["replicate_file1", "replicate_file2"],
+        "experiments": ["ExperimentDprime"]
+    }
+
+    "File6": {
+        "name": "derived_file6",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Signal",
+        "location": "",
+        "software": {
+            "name": "Type1to2",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "derived_file3",
+                "type": "protocol"
+            }
+        ],
+        "derived_from": ["replicate_file4", "replicate_file5"],
+        "experiments": ["ExperimentDdblprime"]
+    }
+
+    "ExperimentDprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleD",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "antibody": "vm-1",
+        "submitted_by": "user"
+    }
+
+    "ExperimentDdblprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleD",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "antibody": "vm-1",
+        "submitted_by": "user"
+    }
+
+    "ExperimentDsharp": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleD",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "antibody": "",
+        "submitted_by": "user"
+    }
+
+    "ExperimentDdblsharp": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleD",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "antibody": "",
+        "submitted_by": "user"
+    }
+
+
+    "ProjectD": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file1", "replciate_file2", "replicate_file4", "replicate_file_5", "derived_file3", "derived_file6"]
+    }
+
+}
