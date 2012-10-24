@@ -64,7 +64,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Signale"
+                "output_type": "Signal"
                 "location": "",
                 "software": {
                     "name": "Type0to2",
@@ -144,7 +144,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Signale"
+                "output_type": "Signal"
                 "location": "",
                 "software": {
                     "name": "Type0to2",
