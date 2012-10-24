@@ -1,0 +1,175 @@
+{
+    "File1": {
+        "name": "replicate_file1",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "",
+                "type": ""
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentEprime"]
+    }
+
+    "File1prime": {
+        "name": "replicate_file1prime",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "",
+                "type": ""
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentEdblprime"]
+    }
+
+    "File2": {
+        "name": "derived_file2",
+        "tag": "",
+        "type": "",
+        "level": 2,
+        "output_type": "Difference",
+        "location": "",
+        "software": {
+            "name": "Type1to2",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [],
+        "derived_from": ["replicate_file1", "replicate_file1prime"],
+        "experiments": ["ExperimentEprime", "ExperimentEdblprime"]
+    }
+
+    "ExperimentEprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleE",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "sourceE",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }]
+
+        },
+        "submitted_by": "user"
+    }
+
+    "ExperimentEdblprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleEprime",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "sourceE",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": "treatment-1"
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "differntiation",
+                        "concentration": "100 nm",
+                        "chemical": "chem-1",
+                        "duration": "10 hr"
+                    }
+                ]
+            }],
+            "relationship": : {
+                "type": "derives_from",
+                "biosample": "BiosampleE"
+            }
+
+        },
+        "submitted_by": "user"
+    }
+
+
+    "ProjectE": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file1", "replciate_file1prime", "derived_file2"]
+    }
+
+}
