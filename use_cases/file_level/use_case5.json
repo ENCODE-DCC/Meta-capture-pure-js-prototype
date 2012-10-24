@@ -46,7 +46,7 @@
             }
         ],
         "derived_from": [],
-        "experiments": ["ExperimentDdblprime"]
+        "experiments": ["ExperimentEdblprime"]
     }
 
     "File2": {
@@ -131,7 +131,7 @@
             "name": ""
         },
         "biosample" : {
-            "term_name": "BiosampleE",
+            "term_name": "BiosampleEprime",
             "type": "",
             "ogranism": {
                 "name": ""
