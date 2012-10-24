@@ -1,0 +1,85 @@
+{
+    "File1": {
+        "name": "replicate_file1",
+        "tag": "",
+        "type": "",
+        "level": 0,
+        "output_type": "rawData",
+        "location": "",
+        "software": {
+            "name": "rawThing",
+            "version": ""
+        },
+        "assembly": {
+            "name": ""
+        },
+        "control": "",
+        "replicates": [
+            {
+                "file_name": "",
+                "type": ""
+            }
+        ],
+        "derived_from": [],
+        "experiments": ["ExperimentKprime"]
+    }
+
+
+    "ExperimentKprime": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "platform": {
+            "name": "",
+        },
+        "preperation": {
+            "protocol": {
+                "name": ""
+            }
+    
+        },
+        "technology_protocol": {
+            "name": ""
+        },
+        "biosample" : {
+            "term_name": "BiosampleKprime",
+            "type": "",
+            "ogranism": {
+                "name": ""
+            },
+            "source": {
+                "name": "",
+            },
+            "growth_protocol": {
+                "name": "",
+            },
+            "treatments": [{
+                "protocol": {
+                    "name": ""
+                },
+                "properties": [
+                    { 
+                        "treatment_type": "",
+                        "concentration": "",
+                        "duration": 0
+                    }
+                ]
+            }],
+            "relationship": : {
+                "type": "derives_from",
+                "biosample": ["BiosampleI", "BiosampleJ"]
+            }
+
+        },
+        "submitted_by": "user"
+    }
+
+
+    "ProjectK": {
+        "name": "",
+        "tag": "",
+        "type": "",
+        "files": ["replicate_file1"]
+    }
+
+}
