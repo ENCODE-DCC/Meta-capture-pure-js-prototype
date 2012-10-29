@@ -48,7 +48,7 @@
                 "output_type": "Alignments",
                 "location": "",
                 "software": {
-                    "name": "rawToAlignments,
+                    "name": "rawToAlignments",
                     "version": ""
                 },
                 "assembly": {
