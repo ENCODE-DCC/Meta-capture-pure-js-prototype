@@ -65,7 +65,7 @@
         },
         "control": "",
         "replicates": [],
-        "derived_from": ["replicate_file1", "replicate_file2],
+        "derived_from": ["replicate_file1", "replicate_file2"],
         "experiments": ["ExperimentMprime", "ExperimentNprime"]
     },
 
