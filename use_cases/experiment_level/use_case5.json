@@ -45,7 +45,7 @@
                 "tag": "",
                 "type": "",
                 "level": 0,
-                "output_type": "RawData"
+                "output_type": "RawData",
                 "location": "",
                 "software": {
                     "name": "rawThing",
@@ -63,7 +63,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Difference"
+                "output_type": "Difference",
                 "location": "",
                 "software": {
                     "name": "Type1to2",
@@ -76,7 +76,7 @@
             }
             
         ]
-    }
+    },
 
     "Experiment-Edblprime": {
         "name": "",
@@ -125,7 +125,7 @@
                 "tag": "",
                 "type": "",
                 "level": 0,
-                "output_type": "RawData"
+                "output_type": "RawData",
                 "location": "",
                 "software": {
                     "name": "rawThing",
@@ -143,7 +143,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Difference"
+                "output_type": "Difference",
                 "location": "",
                 "software": {
                     "name": "Type1to2",

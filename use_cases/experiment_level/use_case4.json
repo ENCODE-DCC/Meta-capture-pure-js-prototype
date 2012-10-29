@@ -46,7 +46,7 @@
                 "tag": "",
                 "type": "protocol",
                 "level": 2,
-                "output_type": "Alignments"
+                "output_type": "Alignments",
                 "location": "",
                 "software": {
                     "name": "alignedReads",
@@ -65,7 +65,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Signal"
+                "output_type": "Signal",
                 "location": "",
                 "software": {
                     "name": "Type1to2",
@@ -78,7 +78,7 @@
                 "derived_from": ["replicate_file1","replicate_file2"]
             }
         ]
-    }
+    },
 
     "Experiment-Ddblprime": {
         "name": "",
@@ -127,7 +127,7 @@
                 "tag": "",
                 "type": "protocol",
                 "level": 2,
-                "output_type": "Alignments"
+                "output_type": "Alignments",
                 "location": "",
                 "software": {
                     "name": "alignedReads",
@@ -146,7 +146,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Signal"
+                "output_type": "Signal",
                 "location": "",
                 "software": {
                     "name": "Type1to2",
@@ -159,7 +159,7 @@
                 "derived_from": ["replicate_file4","replicate_file5"]
             }
         ]
-    }
+    },
 
     "Experiment-Dsharp": {
         "name": "",
@@ -208,7 +208,7 @@
                 "tag": "",
                 "type": "protocol",
                 "level": 2,
-                "output_type": "Alignments"
+                "output_type": "Alignments",
                 "location": "",
                 "software": {
                     "name": "alignedReads",
@@ -221,7 +221,7 @@
                 "replcate_file": ["replciate_file5"]
             },
            ]
-    }
+    },
 
     "Experiment-Ddblsharp": {
         "name": "",
@@ -270,7 +270,7 @@
                 "tag": "",
                 "type": "protocol",
                 "level": 2,
-                "output_type": "Alignments"
+                "output_type": "Alignments",
                 "location": "",
                 "software": {
                     "name": "alignedReads",

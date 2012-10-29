@@ -45,7 +45,7 @@
                 "tag": "",
                 "type": "",
                 "level": 0,
-                "output_type": "RawData"
+                "output_type": "RawData",
                 "location": "",
                 "software": {
                     "name": "rawThing",
@@ -59,7 +59,7 @@
           
           ]
             
-    }
+    },
 
     "Experiment-Gprime": {
         "name": "",
@@ -107,7 +107,7 @@
                 "tag": "",
                 "type": "",
                 "level": 0,
-                "output_type": "RawData"
+                "output_type": "RawData",
                 "location": "",
                 "software": {
                     "name": "rawThing",
@@ -121,7 +121,7 @@
           
           ]
             
-    }
+    },
 
     "Experiment-Hprime": {
         "name": "",
@@ -169,7 +169,7 @@
                 "tag": "",
                 "type": "",
                 "level": 0,
-                "output_type": "RawData"
+                "output_type": "RawData",
                 "location": "",
                 "software": {
                     "name": "rawThing",
@@ -183,7 +183,7 @@
           
           ]
             
-    }
+    },
 
     "ProjectA": {
         "name": "",
@@ -191,7 +191,7 @@
         "type": "",
         "experiments": ["Experiment-Fprime"],
         "derived_file": []
-    }
+    },
 
     "ProjectB": {
         "name": "",
@@ -199,7 +199,7 @@
         "type": "",
         "experiments": ["Experiment-Gprime"],
         "derived_flle": []
-    }
+    },
 
     "ProjectC": {
         "name": "",
@@ -207,7 +207,7 @@
         "type": "",
         "experiments": ["Experiment-Hprime"],
         "derived_file": []
-    }
+    },
 
     "ProjectD": {
         "name": "",
@@ -220,7 +220,7 @@
                 "tag": "",
                 "type": "",
                 "level": 4,
-                "output_type": "Anlaysis"
+                "output_type": "Anlaysis",
                 "location": "",
                 "software": {
                     "name": "level4generator",

@@ -64,7 +64,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Signal"
+                "output_type": "Signal",
                 "location": "",
                 "software": {
                     "name": "Type1to2",
@@ -76,7 +76,7 @@
                 "derived_from": ["replicate_file4","replicate_file5"]
             }
         ]
-    }
+    },
 
     "Experiment-Cdblprime": {
         "name": "",
@@ -143,7 +143,7 @@
                 "tag": "",
                 "type": "",
                 "level": 2,
-                "output_type": "Signal"
+                "output_type": "Signal",
                 "location": "",
                 "software": {
                     "name": "Type1to2",

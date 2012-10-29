@@ -47,7 +47,7 @@
                 "tag": "",
                 "type": "",
                 "level": 0,
-                "output_type": "RawData"
+                "output_type": "RawData",
                 "location": "",
                 "software": {
                     "name": "rawThing",
