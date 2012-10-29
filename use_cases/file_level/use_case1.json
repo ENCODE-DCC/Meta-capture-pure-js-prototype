@@ -17,7 +17,7 @@
         "replicates": [],
         "derived_from": [],
         "experiments": ["ExperimentAprime"]
-    }
+    },
 
     "File2": {
         "name": "replicate_file2",
@@ -37,7 +37,7 @@
         "replicates": [],
         "derived_from": ["replicate_file1"],
         "experiments": ["ExperimentAprime"]
-    }
+    },
 
     "File3": {
         "name": "replicate_file3",
@@ -57,7 +57,7 @@
         "replicates": [],
         "derived_from": ["replicate_file3"],
         "experiments": ["ExperimentAprime"]
-    }
+    },
 
     "ExperimentAprime": {
         "name": "",
@@ -102,7 +102,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
     "ProjectA": {
         "name": "",

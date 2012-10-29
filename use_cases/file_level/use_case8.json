@@ -22,7 +22,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentFprime"]
-    }
+    },
 
      "File2": {
         "name": "replicate_file2",
@@ -47,7 +47,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentGprime"]
-    }
+    },
 
     "File3": {
         "name": "replicate_file3",
@@ -72,7 +72,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentHprime"]
-    }
+    },
 
     "File4": {
         "name": "replicate_file4",
@@ -97,7 +97,7 @@
         ],
         "derived_from": ["replicate_file1","replicate_file2","replicate_file3"],
         "experiments": []
-    }
+    },
 
 
 
@@ -145,7 +145,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentGprime": {
         "name": "",
@@ -191,7 +191,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentHprime": {
         "name": "",
@@ -237,7 +237,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
 
 
@@ -246,28 +246,28 @@
         "tag": "",
         "type": "",
         "files": ["replicate_file1"]
-    }
+    },
 
     "ProjectB": {
         "name": "",
         "tag": "",
         "type": "",
         "files": ["replicate_file2"]
-    }
+    },
 
    "ProjectC": {
         "name": "",
         "tag": "",
         "type": "",
         "files": ["replicate_file3"]
-    }
+    },
 
    "ProjectD": {
         "name": "",
         "tag": "",
         "type": "",
         "files": ["replicate_file1", "replicate_file2", "replicate_file3", "replicate_file4"]
-    }
+    },
 
 
 

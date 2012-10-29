@@ -22,7 +22,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentMprime"]
-    }
+    },
 
     "File2": {
         "name": "replicate_file2",
@@ -47,7 +47,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentNprime"]
-    }
+    },
 
     "File3": {
         "name": "replicate_file3",
@@ -67,7 +67,7 @@
         "replicates": [],
         "derived_from": ["replicate_file1", "replicate_file2],
         "experiments": ["ExperimentMprime", "ExperimentNprime"]
-    }
+    },
 
     "ExperimentMprime": {
         "name": "",
@@ -112,7 +112,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentNprime": {
         "name": "",
@@ -157,7 +157,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
 
     "ProjectO": {

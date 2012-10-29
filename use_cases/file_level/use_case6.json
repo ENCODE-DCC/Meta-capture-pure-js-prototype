@@ -22,7 +22,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentKprime"]
-    }
+    },
 
 
     "ExperimentKprime": {
@@ -72,7 +72,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
 
     "ProjectK": {

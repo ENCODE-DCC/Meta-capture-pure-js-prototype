@@ -22,7 +22,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentCprime"]
-    }
+    },
 
     "File5": {
         "name": "replicate_file5",
@@ -47,7 +47,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentCdblprime"]
-    }
+    },
 
     "File6": {
         "name": "derived_file6",
@@ -67,7 +67,7 @@
         "replicates": [],
         "derived_from": ["replicate_file4", "replicate_file5"],
         "experiments": ["ExperimentCprime", "ExperimentCdblprime"]
-    }
+    },
 
     "ExperimentCprime": {
         "name": "",
@@ -112,7 +112,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentCdblprime": {
         "name": "",
@@ -157,7 +157,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
 
     "ProjectC": {

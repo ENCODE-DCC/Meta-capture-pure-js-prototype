@@ -22,7 +22,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentLprime"]
-    }
+    },
 
     "File1.2": {
         "name": "replicate_file1.2",
@@ -48,7 +48,7 @@
         "derived_from": [],
         "experiments": ["ExperimentLprime"],
         "previous_version": "replicate_file1.1"
-    }
+    },
 
 
     "ExperimentLprime": {
@@ -95,7 +95,7 @@
 
         },
         "submitted_by": "user"
-    }
+    },
 
 
     "ProjectL": {

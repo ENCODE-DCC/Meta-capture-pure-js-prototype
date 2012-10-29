@@ -22,7 +22,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentDprime"]
-    }
+    },
 
     "File4": {
         "name": "replicate_file4",
@@ -47,7 +47,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentDdblprime"]
-    }
+    },
 
     "File2": {
         "name": "replicate_file2",
@@ -72,7 +72,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentDsharp"]
-    }
+    },
 
     "File5": {
         "name": "replicate_file5",
@@ -97,7 +97,7 @@
         ],
         "derived_from": [],
         "experiments": ["ExperimentDdblsharp"]
-    }
+    },
 
     "File3": {
         "name": "derived_file3",
@@ -122,7 +122,7 @@
         ],
         "derived_from": ["replicate_file1", "replicate_file2"],
         "experiments": ["ExperimentDprime"]
-    }
+    },
 
     "File6": {
         "name": "derived_file6",
@@ -147,7 +147,7 @@
         ],
         "derived_from": ["replicate_file4", "replicate_file5"],
         "experiments": ["ExperimentDdblprime"]
-    }
+    },
 
     "ExperimentDprime": {
         "name": "",
@@ -193,7 +193,7 @@
         },
         "antibody": "vm-1",
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentDdblprime": {
         "name": "",
@@ -239,7 +239,7 @@
         },
         "antibody": "vm-1",
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentDsharp": {
         "name": "",
@@ -285,7 +285,7 @@
         },
         "antibody": "",
         "submitted_by": "user"
-    }
+    },
 
     "ExperimentDdblsharp": {
         "name": "",
