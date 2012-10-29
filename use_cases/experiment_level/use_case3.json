@@ -124,10 +124,10 @@
                 "tag": "",
                 "type": "protocol",
                 "level": 2,
-                "output_type": "Alignments"
+                "output_type": "Alignments",
                 "location": "",
                 "software": {
-                    "name": "rawToAlignments,
+                    "name": "rawToAlignments",
                     "version": ""
                 },
                 "assembly": {
